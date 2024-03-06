@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans&family=Poppins&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 33%;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    height: 400px;
+}
+input[type='text'],input[type='password']{
+    height: 2rem;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 6cm;
+}
+input[type='text']:hover,input[type='password']:hover{
+    box-shadow: 1px 1px 5px white;
+}
+input[type='text']:focus,input[type='password']:focus{
+    box-shadow: 1px 1px 20px white;
+    outline: none;
+}
+input[type='submit']{
+    background-color: white;
+    color: black;
+    width: 150px;
+    height: 25px;
+    border-radius: 999px;
+    font-family: 'Poppins', sans-serif;
+}
+input[type='submit']:hover{
+    transform: scale(1.12);
+}
+hr{
+    width: 70%;
+}
+p{
+    color: gray;
+}
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.social-links{
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    margin-right:20px ; 
+}
+.link{
+    color: black;
+}
+.password-div{
+    margin-left: 37px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+.footer-txt{
+    margin-left: 20px;
+}
+.link>i{
+    color: white;
+}
+.form-links{
+    color: white;
+}

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+form{
+    min-height: 500px;
+}
+input[type='date'] {
+    height: 2rem;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 6cm;
+    padding: 5px; 
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5); 
+    font-family: "Madimi One", sans-serif;
+}
+
+input[type='date']:hover {
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.8); 
+}
+
+input[type='date']:focus {
+    box-shadow: 1px 1px 20px rgba(255, 255, 255, 1); 
+    outline: none;
+}
