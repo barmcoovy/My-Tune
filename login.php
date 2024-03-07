@@ -10,7 +10,7 @@
 <body>
     <div class="container-box">
         <div class="form-box">
-            <form action="scripts/php/login_script.php" method='POST'>
+            <form action="scripts/php/login_script.php" method='POST' class="form-login">
                 <label for="nickname">Nickname:</label>
                 <input type="text" name="nickname" placeholder="Nickname" required>
                 <label for="password">Password:</label>

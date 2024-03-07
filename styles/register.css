@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
-form{
+.form-register{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 33%;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
     min-height: 500px;
 }
 input[type='date'] {

@@ -96,3 +96,14 @@ input[type='search']:focus{
 .music-box a>h3{
     color: white;
 }
+.search-button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.artist-name{
+    color: white;
+}
+.followers-number{
+    color: white;
+}

@@ -9,7 +9,7 @@
 <body>
     <div class="container-box">
         <div class="form-box">
-            <form action="scripts/php/create_account_script.php" method='POST'>
+            <form action="scripts/php/create_account_script.php" method='POST' class="form-register">
                 <h3>Create Account</h3>
                 <label for="nickname">Nickname:</label>
                 <input type="text" name="nickname" placeholder="Nickname" required>

@@ -3,17 +3,20 @@
 <head>
     <title>Main Page</title>
 </head>
-</html>
 <body>
     <?php
         session_start();
+        include("scripts/php/db.php");
         include('components/header.php');
+        include('components/artist_profile_card.php');
     ?>
     <div class="container-box">
         <nav class="bar">
+            <form action="#" method="GET" class="search-form">
             <label for="search-bar" class='label-search'>Search songs:</label>
             <input type="search" name="search-bar" id="search-bar">
-            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+            <button class="search-button"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+            </form>
         </nav>
         <div class="music-container">
             <div class="music-box">
@@ -23,9 +26,21 @@
                 <span class="author">Gunna</span>
                 </a>
             </div>
+            <?php
+            $sql = "SELECT name, followers FROM artists";
+            $result = mysqli_query($db,$sql);
+            $artists = show_artist_profile($db);
+            
+            foreach ($artists as $artist) {
+                echo artist_profile_card($artist);
+            }
+            mysqli_close($db);
+        ?>
         </div>
+        
     </div>
    <?php
-        include("components/footer.php");
+        include("components/footer.php");    
    ?>
 </body>
+</html>
