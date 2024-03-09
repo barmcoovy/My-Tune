@@ -45,3 +45,95 @@ input[type="email"]:focus{
     border-radius: 9999px;
     font-family: "Open Sans", sans-serif;
 }
+.profile-panel-div{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20px;
+    height: auto;
+    border-radius: 10px;
+}
+.profile-panel-div:hover{
+    background-color: rgb(22, 22, 22);
+    cursor: pointer;
+}
+.artist-name{
+    color: #ebeeed;
+}
+.profile-img{
+    border-radius: 100%;
+    height: 300px;
+    width: 250px;
+    border: 1px solid white;
+}
+.followers-number{
+    color: #ebeeed;
+}
+.artist-panel-container{
+    display: flex;
+    gap: 100px;
+    width: 100%;
+}
+.songs-container{
+    color: white;
+    width: 80%;
+}
+.songs-container h1{
+    text-align: center;
+}
+.form-add-song{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 33%;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    min-height: 500px;
+}
+#song-name{
+    text-align: center;
+}
+input[type='file']{
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+input[type="reset"]{
+    background-color: white;
+    color: black;
+    width: 150px;
+    height: 25px;
+    border-radius: 999px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+input[type="reset"]:hover{
+    transform: scale(1.12);
+}
+.songs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.song{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+.song-image{
+    width: 200px;
+}
+.song:hover{
+    cursor: pointer;
+}
+audio{
+    display: none;
+}

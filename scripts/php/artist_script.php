@@ -9,7 +9,7 @@
         $check_name = "SELECT name FROM artists WHERE name = '$artist_name'";
         $check_name_query = mysqli_query($db,$check_name);
         if(mysqli_num_rows($check_name_query)== 0 ){
-            $sql = "INSERT INTO artists(name,password,email,country) VALUES('$artist_name','$artist_email','$artist_password','$artist_country')";
+            $sql = "INSERT INTO artists(name,password,email,country) VALUES('$artist_name','$artist_password','$artist_email','$artist_country')";
             mysqli_query($db, $sql);
             mysqli_close($db);
             header("Location: ../../artist.php?success=1");

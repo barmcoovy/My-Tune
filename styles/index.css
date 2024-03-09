@@ -107,3 +107,6 @@ input[type='search']:focus{
 .followers-number{
     color: white;
 }
+input[type="submit"]{
+    cursor: pointer;
+}
