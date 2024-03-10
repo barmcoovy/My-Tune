@@ -1,28 +1,94 @@
-.audio-bar{
-    display: flex;
+#audio-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: rgb(30, 30, 30);
     color: white;
+    padding: 10px;
+    display: flex;
+    z-index: 1000;
 }
-.left{
-    width: 40%;
+
+.left {
+    width: 33%;
 }
-.right{
-    width: 60%;
+
+.right {
+    width: 66%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
 }
-.play-controls{
-    width: 30%;    
-    display: flex;
-    justify-content: space-around;
-    
+.audio-play{
+    width: 50%;
 }
-.volume-controls{
-    width: 70%;
+.play-controls {
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icon-play-controls {
+    cursor: pointer;
+}
+
+.volume-controls {
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: end;
     gap: 20px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20%;
+    height: 15px;
+    background: rgb(30, 30, 30);
+    border-radius: 10px;
+    outline: none;
+    margin: 10px 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -5px;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: white;
+    border-radius: 10px;
+}
+
+input[type="range"]::-moz-range-track {
+    background: white;
+    border-radius: 10px;
+}
+.time-controls{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+#time-range{
+    width: 100%;
+}
+#current-time,#total-duration{
+    font-size: 15px;
 }
